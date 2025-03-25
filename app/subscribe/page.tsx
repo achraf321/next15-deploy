@@ -3,7 +3,6 @@ import React from 'react'
 import { AvailablePlans } from '@/lib/plans'
 import { Card,
 CardHeader,
-CardFooter,
 CardTitle,
 CardDescription,
 CardContent,} from '@/components/ui/card'
@@ -15,10 +14,6 @@ import toast from "react-hot-toast"
 
 interface SubscribeResponse {
   url : string
-}
-
-interface SubscribeError {
-  error : string,
 }
 
 
@@ -43,7 +38,7 @@ async function handleData (userId : string , email : string , planType : string)
 }
 
 
-const page = () => {
+const Page = () => {
 
   const {user} = useUser()
 const router = useRouter()
@@ -105,4 +100,4 @@ function handleSubscribe(planType : string) {
   )
 }
 
-export default page
+export default Page

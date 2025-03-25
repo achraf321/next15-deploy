@@ -6,7 +6,7 @@ import Why from '@/components/Why'
 import Join from '@/components/Join'
 import Footer from '@/components/Footer'
 
-const page = () => {
+const Page = () => {
   return (
     <div>
       <Hero/>
@@ -19,4 +19,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

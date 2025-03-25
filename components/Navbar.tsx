@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React , {useState } from 'react'
 import { Button } from './ui/button'
 import { FaBars } from 'react-icons/fa'
-import { SignedIn , SignedOut , SignUpButton , SignOutButton } from '@clerk/nextjs'
+import { SignedIn , SignedOut , SignOutButton } from '@clerk/nextjs'
 import { useUser } from '@clerk/nextjs'
 import Image from 'next/image'
 
@@ -30,9 +30,7 @@ function handleNav () {
     <div className="bg-white h-[70px] z-10 w-full fixed top-0 flex items-center justify-between px-6 md:px-12 shadow-md">
       <div>
        <Link href="/">
-       <img src="/logo.png" alt="" 
-        className="w-26"
-        /> 
+       <Image src="/logo.png" alt='' height={26} width={26}/>
        </Link>
       </div>
       <div className="flex items-center gap-6">

@@ -17,7 +17,7 @@ const data = await response.json()
 return data
 }
 
-const page = () => {
+const Page = () => {
 const {isSignedIn , isLoaded} = useUser()
 const router = useRouter()
 const {mutate , isPending} = useMutation({
@@ -42,4 +42,4 @@ useEffect(() => {
   )
 }
 
-export default page
+export default Page
