@@ -18,7 +18,13 @@ export async function GET(req: NextRequest) {
     });
 
     return NextResponse.json({ subscriptionActive: profile?.subscriptionActive });
-  } catch (error: any) {
-    return NextResponse.json({ error: error.message || "Internal Server Error" }, { status: 500 });
+  } catch (error: unknown) {
+  
+    if (error instanceof Error) {
+      return NextResponse.json({ error: error.message }, { status: 500 });
+    } else {
+      return NextResponse.json({ error: "Internal Server Error" }, { status: 500 });
+    }
   }
 }
+
