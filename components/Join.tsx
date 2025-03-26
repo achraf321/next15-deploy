@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Join = () => {
@@ -57,7 +58,7 @@ className="bg-gray-100 p-3 rounded-md w-full"
       <button className="bg-[#0093FF] text-white rounded-md w-full h-15 cursor-pointer">Join Mailing List</button>
 </div>
 <div>
-<img src="/book.png" alt="" />
+<Image src="/book.png" alt="" height={500} width={500}/>
 <div className="">
   <div className="grid grid-cols-2 gap-6">
 <div className="leading-8">

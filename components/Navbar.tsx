@@ -30,7 +30,7 @@ function handleNav () {
     <div className="bg-white h-[70px] z-10 w-full fixed top-0 flex items-center justify-between px-6 md:px-12 shadow-md">
       <div>
        <Link href="/">
-       <Image src="/logo.png" alt='' height={26} width={26}/>
+       <Image src="/logo.png" alt='' height={70} width={70}/>
        </Link>
       </div>
       <div className="flex items-center gap-6">

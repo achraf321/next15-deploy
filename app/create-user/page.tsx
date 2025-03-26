@@ -33,7 +33,7 @@ const Page = () => {
         if (isLoaded && isSignedIn && !isPending) {
             mutate()
         }
-    }, [isLoaded, isSignedIn, isPending])  // Added isPending to the dependency array
+    }, [isLoaded, isSignedIn, isPending , mutate])  // Added isPending to the dependency array
 
     return (
         <div>

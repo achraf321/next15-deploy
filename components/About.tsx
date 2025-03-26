@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const About = () => {
@@ -10,7 +11,7 @@ const About = () => {
 <p>When you invest with Atlas, you are more than a number; you are a partner. As a partner with us, you can access opportunities usually reserved only for the largest institutional investors. You can access a team driven only by excellence and results. You can access real estate investment opportunities designed with you in mind.</p>
 </div>
 <div className="flex items-center">
-    <img src="/team.png" alt="" />
+    <Image src="/team.png" alt='' height={500} width={500}/>
 </div>
       </div>
       <p className="h-px w-full bg-gradient-to-r from-white via-[#0093FF] to-white my-4"></p>

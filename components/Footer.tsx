@@ -3,6 +3,7 @@ import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { IoLocationSharp } from "react-icons/io5";
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 const footerlinks = [
@@ -41,7 +42,7 @@ const Footer = () => {
       </div>
  <div className="flex justify-center my-4">
  <div className="flex items-center gap-6">
-        <img src="/logo.png" alt="" className="w-22"/>
+        <Image src="/logo.png" alt="" height={70} width={70}></Image>
         <p className="text-white">ATLAS 2022 @ All Right Reserved</p>
       </div>
  </div>

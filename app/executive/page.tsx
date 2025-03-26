@@ -20,7 +20,8 @@ export default function ChatPage() {
 
       const data = await response.json();
       setReply(data.reply || "No response from AI.");
-    } catch (error) {
+    } catch (error: any) {
+      console.error("Error connecting to AI:", error);  // Log the error here
       setReply("Error connecting to AI.");
     }
 
@@ -53,6 +54,7 @@ export default function ChatPage() {
     </div>
   );
 }
+
 
 
 

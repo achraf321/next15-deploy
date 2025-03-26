@@ -2,13 +2,14 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const logos: string[] = [
-  "be1.png",
-  "be2.png",
-  "be3.png",
-  "be4.png",
-  "be5.png",
+  "/images/be1.png",
+  "/images/be2.png",
+  "/images/be3.png",
+  "/images/be4.png",
+  "/images/be5.png",
 ];
 
 const Feutured = () => {
@@ -31,11 +32,13 @@ const Feutured = () => {
         >
           {/* Duplicate logos for smooth looping */}
           {[...logos, ...logos].map((logo, index) => (
-            <img
+            <Image
               key={index}
               src={logo}
-              alt={`Client ${index}`}
-              className="h-6 w-auto"
+              alt={`Client ${index + 1}`} // Improved alt text for clarity
+
+              width={80} // Define width explicitly
+              height={80} // Define height explicitly
             />
           ))}
         </motion.div>
@@ -45,6 +48,7 @@ const Feutured = () => {
 };
 
 export default Feutured;
+
 
 
 
